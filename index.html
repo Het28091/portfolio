@@ -17,8 +17,6 @@
     <!-- PDF.js for certificate rendering on all browsers & hosts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <!-- EmailJS for contact form -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -259,12 +257,20 @@
                 <div class="project-card tilt-card reveal-decrypt" data-index="2">
                     <div class="card-inner">
                         <div class="card-glow"></div>
-                        <div class="card-header"><span class="card-tag">CLOUD SEC</span></div>
-                        <h3 class="card-title">Secure File Sharing System</h3>
-                        <p class="card-desc">Cloud-native file repository with zero public exposure via S3 encryption
-                            and automated Lambda auditing.</p>
-                        <div class="card-stack"><span>AWS
-                                S3</span><span>DynamoDB</span><span>Lambda</span><span>IAM</span></div>
+                        <div class="card-header">
+                            <span class="card-tag">FRONTEND</span>
+                            <a href="https://sundown-studio-tau.vercel.app/" target="_blank" rel="noopener"
+                                class="card-github-link">Live &nearr;</a>
+                            <a href="https://github.com/Het28091/Sundown-Studio" target="_blank" rel="noopener"
+                                class="card-github-link">GitHub &nearr;</a>
+                        </div>
+                        <h3 class="card-title">Sundown Studio</h3>
+                        <p class="card-desc">Premium creative agency landing page with scroll-driven animations, custom
+                            cursor, and fluid parallax &mdash; pure frontend craftsmanship.</p>
+                        <div class="card-stack">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GSAP</span><span>Locomotive
+                                Scroll</span>
+                        </div>
                         <button class="card-btn" onclick="openModal(2)">Inspect Mission &rarr;</button>
                     </div>
                 </div>
@@ -283,22 +289,15 @@
                 <div class="project-card tilt-card reveal-decrypt" data-index="4">
                     <div class="card-inner">
                         <div class="card-glow"></div>
-                        <div class="card-header">
-                            <span class="card-tag">FRONTEND</span>
-                            <a href="https://github.com/Het28091/Sundown-Studio" target="_blank" rel="noopener"
-                                class="card-github-link">GitHub &nearr;</a>
-                        </div>
-                        <h3 class="card-title">Sundown</h3>
-                        <p class="card-desc">Premium creative agency landing page with scroll-driven animations, custom
-                            cursor, and fluid parallax &mdash; pure frontend craftsmanship.</p>
-                        <div class="card-stack">
-                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GSAP</span><span>Locomotive
-                                Scroll</span>
-                        </div>
+                        <div class="card-header"><span class="card-tag">CLOUD SEC</span></div>
+                        <h3 class="card-title">Secure File Sharing System</h3>
+                        <p class="card-desc">Cloud-native file repository with zero public exposure via S3 encryption
+                            and automated Lambda auditing.</p>
+                        <div class="card-stack"><span>AWS
+                                S3</span><span>DynamoDB</span><span>Lambda</span><span>IAM</span></div>
                         <button class="card-btn" onclick="openModal(4)">Inspect Mission &rarr;</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

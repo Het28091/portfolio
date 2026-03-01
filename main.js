@@ -1,17 +1,6 @@
 'use strict';
 
 /* ══════════════════════════════════════════════════
-   EMAILJS — init (replace with your actual public key)
-   Sign up free at: https://www.emailjs.com
-   Service ID: your_service_id  Template ID: your_template_id
-══════════════════════════════════════════════════ */
-(function () {
-    if (typeof emailjs !== 'undefined') {
-        emailjs.init({ publicKey: 'YOUR_PUBLIC_KEY_HERE' });
-    }
-})();
-
-/* ══════════════════════════════════════════════════
    PDF.js CERTIFICATE RENDERER
    Renders the first page of each cert PDF onto a canvas
    Works on GitHub Pages, AWS S3, Netlify — any host
@@ -493,16 +482,17 @@ const PROJECTS = [
         concepts: ['AES-256-GCM', 'PBKDF2', 'Salting', 'Zero-Knowledge', 'Key Stretching', 'SQL Injection Prevention'],
     },
     {
-        icon: '☁️', title: 'Secure File Sharing System',
-        stack: ['AWS S3', 'DynamoDB', 'Lambda', 'IAM', 'Python'],
-        objective: 'Built a serverless file repository on AWS with enterprise-grade access controls, eliminating the risk of public data exposure while automating continuous compliance checks.',
+        icon: '🌇', title: 'Sundown Studio',
+        github: 'https://github.com/Het28091/Sundown-Studio',
+        stack: ['HTML5', 'CSS3', 'JavaScript', 'GSAP', 'Locomotive Scroll'],
+        objective: 'Crafted a visually stunning static frontend for Sundown Studio — a creative agency landing page featuring fluid scroll-driven animations, a custom cursor, smooth page transitions, and a premium glassmorphism aesthetic that showcases advanced frontend engineering.',
         achievements: [
-            'Enforced S3 Server-Side Encryption (SSE-S3) on all objects — at-rest data is always protected.',
-            'Pre-signed URLs with TTL < 15 minutes ensure time-limited, identity-bound access — no shared links.',
-            'Lambda audit functions run on every S3 event, automatically revoking any detected public ACL changes.',
-            'Achieved zero public exposure by combining bucket policies with IAM Least Privilege everywhere.',
+            'Built zero-dependency scroll-driven reveal animations using Locomotive Scroll for buttery-smooth parallax effects.',
+            'Implemented a custom SVG cursor with magnetic hover states on interactive elements for a premium feel.',
+            'Achieved pixel-perfect responsive layouts across all breakpoints with pure CSS Grid and Flexbox.',
+            'Performance-optimized asset loading with lazy-loaded sections and minimal layout shift (CLS ≈ 0).',
         ],
-        concepts: ['SSE-S3', 'Pre-signed URLs', 'Least Privilege', 'IAM Policies', 'Event-Driven Security', 'Serverless'],
+        concepts: ['Scroll Animation', 'Custom Cursor', 'Parallax UX', 'CSS Grid / Flexbox', 'Performance Optimization', 'Creative UI/UX'],
     },
     {
         icon: '👁️', title: 'FaceCopy',
@@ -517,17 +507,16 @@ const PROJECTS = [
         concepts: ['HOG Face Detection', 'Face Embeddings', 'Biometric Auth', 'Privacy-by-Design', 'Real-Time CV'],
     },
     {
-        icon: '🌇', title: 'Sundown',
-        github: 'https://github.com/Het28091/Sundown-Studio',
-        stack: ['HTML5', 'CSS3', 'JavaScript', 'GSAP', 'Locomotive Scroll'],
-        objective: 'Crafted a visually stunning static frontend for Sundown Studio — a creative agency landing page featuring fluid scroll-driven animations, a custom cursor, smooth page transitions, and a premium glassmorphism aesthetic that showcases advanced frontend engineering.',
+        icon: '☁️', title: 'Secure File Sharing System',
+        stack: ['AWS S3', 'DynamoDB', 'Lambda', 'IAM', 'Python'],
+        objective: 'Built a serverless file repository on AWS with enterprise-grade access controls, eliminating the risk of public data exposure while automating continuous compliance checks.',
         achievements: [
-            'Built zero-dependency scroll-driven reveal animations using Locomotive Scroll for buttery-smooth parallax effects.',
-            'Implemented a custom SVG cursor with magnetic hover states on interactive elements for a premium feel.',
-            'Achieved pixel-perfect responsive layouts across all breakpoints with pure CSS Grid and Flexbox.',
-            'Performance-optimized asset loading with lazy-loaded sections and minimal layout shift (CLS ≈ 0).',
+            'Enforced S3 Server-Side Encryption (SSE-S3) on all objects — at-rest data is always protected.',
+            'Pre-signed URLs with TTL < 15 minutes ensure time-limited, identity-bound access — no shared links.',
+            'Lambda audit functions run on every S3 event, automatically revoking any detected public ACL changes.',
+            'Achieved zero public exposure by combining bucket policies with IAM Least Privilege everywhere.',
         ],
-        concepts: ['Scroll Animation', 'Custom Cursor', 'Parallax UX', 'CSS Grid / Flexbox', 'Performance Optimization', 'Creative UI/UX'],
+        concepts: ['SSE-S3', 'Pre-signed URLs', 'Least Privilege', 'IAM Policies', 'Event-Driven Security', 'Serverless'],
     },
 ];
 
@@ -571,12 +560,11 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 /* (Threat ticker removed) */
 
 /* ══════════════════════════════════════════════════
-   CONTACT FORM — EmailJS
+   CONTACT FORM — Mailto
 ══════════════════════════════════════════════════ */
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
     const status = document.getElementById('formStatus');
-    const btn = this.querySelector('button[type=submit]');
     const name = document.getElementById('fName').value.trim();
     const mail = document.getElementById('fEmail').value.trim();
     const subj = document.getElementById('fSubject').value.trim();
@@ -588,44 +576,15 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
         return;
     }
 
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-    status.textContent = '';
-    status.className = 'form-status';
+    const emailBody = `Name: ${name}\nEmail: ${mail}\n\nMessage:\n${msg}`;
+    const subject = `[Portfolio] ${subj}`;
+    const mailtoLink = `mailto:het2809@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
 
-    const useEmailJS = typeof emailjs !== 'undefined' && emailjs.send;
-    if (useEmailJS) {
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-            from_name: name,
-            from_email: mail,
-            subject: subj,
-            message: msg,
-            to_email: 'het2809@gmail.com',
-        }).then(() => {
-            status.textContent = 'Message sent successfully!';
-            status.className = 'form-status ok';
-            btn.textContent = 'Send Message';
-            btn.disabled = false;
-            this.reset();
-        }).catch(() => {
-            // Fallback to mailto
-            openMailto(name, mail, subj, msg);
-            btn.textContent = 'Send Message';
-            btn.disabled = false;
-        });
-    } else {
-        openMailto(name, mail, subj, msg);
-        btn.textContent = 'Send Message';
-        btn.disabled = false;
-        this.reset();
-    }
+    window.location.href = mailtoLink;
 
-    function openMailto(n, m, s, b) {
-        const href = `mailto:het2809@gmail.com?subject=${encodeURIComponent('[Portfolio] ' + s)}&body=${encodeURIComponent('From: ' + n + ' <' + m + '>\n\n' + b)}`;
-        window.open(href, '_blank');
-        status.textContent = 'Email client opened. If it did not open, email het2809@gmail.com directly.';
-        status.className = 'form-status ok';
-    }
+    status.textContent = 'Opening your email client... If it did not open, email het2809@gmail.com directly.';
+    status.className = 'form-status ok';
+    this.reset();
 });
 
 /* ══════════════════════════════════════════════════
