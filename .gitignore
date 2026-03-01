@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Python dev server (not part of the site)
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
