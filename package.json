@@ -1,0 +1,11 @@
+{
+    "name": "het-portfolio",
+    "version": "1.0.0",
+    "description": "Het Prajapati Cybersecurity Portfolio",
+    "main": "index.html",
+    "scripts": {
+        "dev": "npx --yes live-server --port=3000"
+    },
+    "author": "Het Prajapati",
+    "license": "ISC"
+}

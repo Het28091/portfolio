@@ -7,7 +7,7 @@
 ══════════════════════════════════════════════════ */
 (function () {
     if (typeof emailjs !== 'undefined') {
-        emailjs.init({ publicKey: 'YOUR_PUBLIC_KEY_HERE' });
+        emailjs.init({ publicKey: '42lSztGcz8oBeXs4m' });
     }
 })();
 
@@ -596,7 +596,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     const useEmailJS = typeof emailjs !== 'undefined' && emailjs.send;
     if (useEmailJS) {
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+        emailjs.send('service_ybmu3rk', 'template_us1tvje', {
             from_name: name,
             from_email: mail,
             subject: subj,
