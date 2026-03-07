@@ -1,6 +1,17 @@
 'use strict';
 
 /* ══════════════════════════════════════════════════
+   EMAILJS — init (replace with your actual public key)
+   Sign up free at: https://www.emailjs.com
+   Service ID: YOUR_SERVICE_ID  Template ID: YOUR_TEMPLATE_ID
+══════════════════════════════════════════════════ */
+(function () {
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init({ publicKey: 'YOUR_PUBLIC_KEY_HERE' });
+    }
+})();
+
+/* ══════════════════════════════════════════════════
    PDF.js CERTIFICATE RENDERER
    Renders the first page of each cert PDF onto a canvas
    Works on GitHub Pages, AWS S3, Netlify — any host
@@ -570,21 +581,52 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     const subj = document.getElementById('fSubject').value.trim();
     const msg = document.getElementById('fMsg').value.trim();
 
+    const btn = this.querySelector('button[type=submit]');
+
     if (!name || !mail || !subj || !msg) {
         status.textContent = 'All fields are required.';
         status.className = 'form-status err';
         return;
     }
 
-    const emailBody = `Name: ${name}\nEmail: ${mail}\n\nMessage:\n${msg}`;
-    const subject = `[Portfolio] ${subj}`;
-    const mailtoLink = `mailto:het2809@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    status.textContent = '';
+    status.className = 'form-status';
 
-    window.location.href = mailtoLink;
+    const useEmailJS = typeof emailjs !== 'undefined' && emailjs.send;
+    if (useEmailJS) {
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+            from_name: name,
+            from_email: mail,
+            subject: subj,
+            message: msg,
+            to_email: 'het2809@gmail.com',
+        }).then(() => {
+            status.textContent = 'Message sent successfully!';
+            status.className = 'form-status ok';
+            btn.textContent = 'Send Message';
+            btn.disabled = false;
+            this.reset();
+        }).catch((err) => {
+            console.error('EmailJS error:', err);
+            // Fallback to mailto
+            openMailto(name, mail, subj, msg);
+            btn.textContent = 'Send Message';
+            btn.disabled = false;
+        });
+    } else {
+        openMailto(name, mail, subj, msg);
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+    }
 
-    status.textContent = 'Opening your email client... If it did not open, email het2809@gmail.com directly.';
-    status.className = 'form-status ok';
-    this.reset();
+    function openMailto(n, m, s, b) {
+        const href = `mailto:het2809@gmail.com?subject=${encodeURIComponent('[Portfolio] ' + s)}&body=${encodeURIComponent('From: ' + n + ' <' + m + '>\n\n' + b)}`;
+        window.open(href, '_blank');
+        status.textContent = 'Email client opened. If it did not open, email het2809@gmail.com directly.';
+        status.className = 'form-status ok';
+    }
 });
 
 /* ══════════════════════════════════════════════════
