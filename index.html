@@ -1,697 +1,490 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Het Prajapati | Cybersecurity</title>
-    <meta name="description"
-        content="Portfolio of Het Prajapati — RHCSA Certified, pursuing a career in Cybersecurity with expertise in Cloud Security, Penetration Testing, and Cryptography." />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <!-- PDF.js for certificate rendering on all browsers & hosts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <!-- EmailJS for contact form -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Het Prajapati — Security, Systems &amp; Software</title>
+<meta content="Het Prajapati: cybersecurity intern at eInfochips, RHCSA-certified Computer Engineering student, and developer building secure software and cloud systems." name="description"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<link href="favicon.png" rel="shortcut icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 
-<body>
+<!-- PDF.js for certificate rendering on all browsers & hosts -->
 
-    <!-- Custom Cursor -->
-    <div class="cursor-outer" id="cursorOuter"></div>
-    <div class="cursor-dot" id="cursorDot"></div>
+<link href="style.css?v=2" rel="stylesheet"/>
+<!-- EmailJS for contact form -->
 
-    <!-- NAV -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-logo"><span class="accent">&gt;</span> HP<span class="accent blink">_</span></div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certs">Certs</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero" id="hero">
-        <canvas id="particleCanvas"></canvas>
-        <!-- Binary rain overlay -->
-        <canvas id="binaryRain" aria-hidden="true"></canvas>
-        <div class="hero-content">
-            <div class="hero-pre reveal-decrypt">sys.init("portfolio.exe")</div>
-            <h1 class="hero-name reveal-decrypt">Het Prajapati</h1>
-            <div class="hero-subtitle"><span class="accent">&gt; </span><span id="typingText"></span><span
-                    class="cursor-blink">|</span></div>
-            <p class="hero-tagline reveal-decrypt">Defending the digital frontier &mdash; one packet at a time.</p>
-            <div class="hero-ctas">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
-            </div>
-        </div>
-        <div class="hero-scroll-hint"><span>scroll to explore</span>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+<meta content="#f4f2eb" name="theme-color"/><meta content="Het Prajapati — Security, Systems &amp; Software" property="og:title"/><meta content="Explore my work in cybersecurity, cloud infrastructure, and software engineering." property="og:description"/><meta content="website" property="og:type"/></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<!-- Custom Cursor -->
 
 
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="section-label reveal-decrypt">// WHO AM I</div>
-            <h2 class="section-title reveal-decrypt">About Me</h2>
-            <div class="about-grid">
-
-                <!-- Left: Text -->
-                <div class="about-text">
-                    <p class="reveal-decrypt">
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+<a aria-label="Het Prajapati home" class="nav-logo" href="#hero">het<span class="accent">.</span><span class="logo-caption">PRAJAPATI</span></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#certs">Certs</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<button aria-controls="navLinks" aria-expanded="false" aria-label="Open navigation" class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav><main id="main"><section class="hero" id="hero"><div class="hero-top"><span><i class="status-dot"></i> SECURITY × SYSTEMS × SOFTWARE</span><span>VADODARA, INDIA ↗</span></div><div class="hero-grid"><div class="hero-content"><p class="eyebrow">HELLO, I'M HET PRAJAPATI</p><h1>Curiosity builds.<br/><em>Security</em><br/>makes it last.</h1><p class="hero-tagline">I break things to understand them.<br/>Then build them to be better.</p><p class="hero-description">Computer Engineering student. RHCSA certified.<br/>Exploring cybersecurity at eInfochips — An Arrow Company.</p><div class="hero-ctas"><a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a><a class="text-link" href="#contact">Let’s connect ↗</a></div></div><div aria-hidden="true" class="hero-art"><div class="art-label">THE INTERSECTION OF<br/>CODE &amp; CONFIDENCE</div><div class="orb"><div class="orb-ring r1"></div><div class="orb-ring r2"></div><div class="orb-ring r3"></div><div class="orb-ring r4"></div><div class="orb-core">hp<span>_</span></div></div><span class="art-coordinate">PYTHON / LINUX / WEB</span><div class="art-note"><span>01 / ALWAYS LEARNING</span><strong>Think like an attacker.<br/>Build like an engineer.</strong></div></div></div><div class="hero-bottom"><span>OFFENSIVE SECURITY / CLOUD / DEVELOPMENT</span><a href="#about">SCROLL TO DISCOVER ↓</a></div></section><section class="section" id="about">
+<div class="container">
+<div class="section-label reveal-decrypt">01 / THE PERSON BEHIND THE CODE</div>
+<h2 class="section-title reveal-decrypt">A builder with a<br/>security mindset.</h2>
+<div class="about-grid">
+<!-- Left: Text -->
+<div class="about-text">
+<p class="reveal-decrypt">
                         I'm a <span class="accent">Computer Engineering student</span> at CHARUSAT (CGPA: 8.71) with a
                         laser focus on breaking and building secure systems. I hold a <span class="accent">Red Hat
                             Certified System Administrator (RHCSA)</span> credential — one of the most respected Linux
                         certs in the industry.
                     </p>
-                    <ul class="about-bullets reveal-decrypt">
-                        <li><span class="bullet-icon">&#9658;</span><span class="bullet-text">Passionate about <span
-                                    class="accent">offensive &amp; defensive security</span> &mdash; from vulnerability
+<ul class="about-bullets reveal-decrypt">
+<li><span class="bullet-icon">►</span><span class="bullet-text">Passionate about <span class="accent">offensive &amp; defensive security</span> — from vulnerability
                                 research and penetration testing to cloud hardening and anomaly detection.</span></li>
-                        <li><span class="bullet-icon">&#9658;</span><span class="bullet-text">Achieved <span
-                                    class="accent">Global Rank #51</span> at the Hackerverse CTF organised by
+<li><span class="bullet-icon">►</span><span class="bullet-text">Achieved <span class="accent">Global Rank #51</span> at the Hackerverse CTF organised by
                                 EC-Council, competing against thousands worldwide.</span></li>
-                        <li><span class="bullet-icon">&#9658;</span><span class="bullet-text"><span class="accent">RHCSA
-                                    certified</span> and Google Cybersecurity Professional certified &mdash; hands-on
+<li><span class="bullet-icon">►</span><span class="bullet-text"><span class="accent">RHCSA
+                                    certified</span> and Google Cybersecurity Professional certified — hands-on
                                 expertise in Linux administration and security operations.</span></li>
-                        <li><span class="bullet-icon">&#9658;</span><span class="bullet-text"><span
-                                    class="accent">3&times; NPTEL Top&nbsp;5%</span> &mdash; Gold Medalist in
+<li><span class="bullet-icon">►</span><span class="bullet-text"><span class="accent">3× NPTEL Top 5%</span> — Gold Medalist in
                                 Cryptography &amp; Network Security (IIT Madras), Elite in DBMS and Python.</span></li>
-                        <li><span class="bullet-icon">&#9658;</span><span class="bullet-text">Active on TryHackMe <span
-                                    class="accent">(Top 2%)</span>, CodeChef <span class="accent">(3&#8209;Star)</span>,
+<li><span class="bullet-icon">►</span><span class="bullet-text">Active on TryHackMe <span class="accent">(Top 2%)</span>, CodeChef <span class="accent">(3‑Star)</span>,
                                 and LeetCode <span class="accent">(680+ solves)</span>.</span></li>
-                    </ul>
-                    <div class="about-stats reveal-decrypt">
-                        <div class="stat"><span class="stat-num accent">8.71</span><span class="stat-label">CGPA</span>
-                        </div>
-                        <div class="stat"><span class="stat-num accent">86.36</span><span class="stat-label">12th
+</ul>
+<div class="about-stats reveal-decrypt">
+<div class="stat"><span class="stat-num accent">8.71</span><span class="stat-label">CGPA</span>
+</div>
+<div class="stat"><span class="stat-num accent">86.36</span><span class="stat-label">12th
                                 Percentile</span></div>
-                        <div class="stat"><span class="stat-num accent">3x</span><span class="stat-label">NPTEL Top
+<div class="stat"><span class="stat-num accent">3x</span><span class="stat-label">NPTEL Top
                                 5%</span></div>
-                        <div class="stat"><span class="stat-num accent">#51</span><span class="stat-label">CTF Global
+<div class="stat"><span class="stat-num accent">#51</span><span class="stat-label">CTF Global
                                 Rank</span></div>
-                    </div>
-                </div>
-
-                <!-- Right: RHCSA Certificate Showcase -->
-                <div class="about-cert-side reveal-decrypt">
-                    <div class="cert-showcase">
-                        <div class="cert-showcase-label">
-                            <span class="cert-dot"></span> RHCSA CERTIFIED
+</div>
+</div>
+<!-- Right: RHCSA Certificate Showcase -->
+<div class="about-cert-side reveal-decrypt">
+<div class="cert-showcase">
+<div class="cert-showcase-label">
+<span class="cert-dot"></span> RHCSA CERTIFIED
                         </div>
-                        <div class="cert-showcase-frame">
-                            <img src="rhcsa_cert.png" alt="Red Hat Certified System Administrator Certificate"
-                                class="cert-showcase-img" />
-                        </div>
-                        <p class="cert-showcase-caption">One of the industry's most respected Linux &amp; system
-                            administration certifications.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section section-dark" id="skills">
-        <div class="container">
-            <div class="section-label reveal-decrypt">// CAPABILITIES</div>
-            <h2 class="section-title reveal-decrypt">Skills Array</h2>
-            <div class="skills-layout">
-                <div class="radar-wrapper reveal-decrypt" id="skillsGlobe"></div>
-                <div class="skill-bars">
-                    <div class="skill-category reveal-decrypt">
-                        <h3 class="cat-title">Cybersecurity</h3>
-                        <div class="skill-bar-row" data-pct="85"><span>Cryptography (AES/RSA)</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">85%</span>
-                        </div>
-                        <div class="skill-bar-row" data-pct="80"><span>Network Security</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">80%</span>
-                        </div>
-                        <div class="skill-bar-row" data-pct="75"><span>Penetration Testing</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">75%</span>
-                        </div>
-                        <div class="skill-bar-row" data-pct="72"><span>OWASP Top 10</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">72%</span>
-                        </div>
-                    </div>
-                    <div class="skill-category reveal-decrypt">
-                        <h3 class="cat-title">Cloud &amp; Systems</h3>
-                        <div class="skill-bar-row" data-pct="90"><span>Linux / RHEL Admin</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">90%</span>
-                        </div>
-                        <div class="skill-bar-row" data-pct="85"><span>AWS Security (IAM/VPC)</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">85%</span>
-                        </div>
-                        <div class="skill-bar-row" data-pct="82"><span>Shell Scripting (Bash)</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">82%</span>
-                        </div>
-                        <div class="skill-bar-row" data-pct="78"><span>Docker / Virtualization</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">78%</span>
-                        </div>
-                    </div>
-                    <div class="skill-category reveal-decrypt">
-                        <h3 class="cat-title">Languages &amp; Tools</h3>
-                        <div class="skill-bar-row" data-pct="88"><span>Python</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">88%</span>
-                        </div>
-                        <div class="skill-bar-row" data-pct="75"><span>C / C++</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">75%</span>
-                        </div>
-                        <div class="skill-bar-row" data-pct="70"><span>Nmap / Wireshark</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">70%</span>
-                        </div>
-                        <div class="skill-bar-row" data-pct="65"><span>Burp Suite / Metasploit</span>
-                            <div class="bar-track">
-                                <div class="bar-fill"></div>
-                            </div><span class="pct-label">65%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tool-tags reveal-decrypt">
-                <span class="tag">Nmap</span><span class="tag">Wireshark</span><span class="tag">Burp Suite</span>
-                <span class="tag">Metasploit</span><span class="tag">AES-256</span><span class="tag">PBKDF2</span>
-                <span class="tag">AWS CloudWatch</span><span class="tag">IAM</span><span class="tag">VPC</span>
-                <span class="tag">Docker</span><span class="tag">Git</span><span class="tag">OpenCV</span>
-                <span class="tag">Scapy</span><span class="tag">CloudTrail</span><span class="tag">S3</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-        <div class="container">
-            <div class="section-label reveal-decrypt">// MISSION LOG</div>
-            <h2 class="section-title reveal-decrypt">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card tilt-card reveal-decrypt" data-index="0">
-                    <div class="card-inner">
-                        <div class="card-glow"></div>
-                        <div class="card-header">
-                            <span class="card-tag">WEB3</span>
-                            <a href="https://github.com/Het28091/Blockrent_2026" target="_blank" rel="noopener"
-                                class="card-github-link" title="View on GitHub">GitHub &nearr;</a>
-                        </div>
-                        <h3 class="card-title">Blockrent</h3>
-                        <p class="card-desc">Decentralized Web3 rental &amp; auction platform on Ethereum &mdash; smart
+<div class="cert-showcase-frame">
+<img alt="Red Hat Certified System Administrator Certificate" class="cert-showcase-img" decoding="async" loading="lazy" src="rhcsa_cert.png"/>
+</div>
+<p class="cert-showcase-caption">Red Hat Certified System Administrator · February 2026</p>
+</div>
+</div>
+</div>
+</div>
+</section><section class="section" id="projects">
+<div class="container">
+<div class="section-label reveal-decrypt">02 / SELECTED WORK</div>
+<h2 class="section-title reveal-decrypt">Built with purpose.</h2>
+<div class="projects-grid"><div class="project-card" data-index="5"><div class="card-inner"><span class="project-number">01</span><div class="card-header"><span class="card-tag">SECURITY TOOLING</span><span class="project-status">IN PROGRESS</span></div><h3 class="card-title">Secaudit</h3><p class="card-desc">A modular Linux assessment platform for automated checks, evidence collection, log aggregation, and structured security reporting.</p><div class="card-stack"><span>Python</span><span>Bash</span><span>Linux</span><span>CLI / JSON</span></div><details class="project-details"><summary>Explore project <span>↗</span></summary><div><p>In progress: a modular Linux-centric assessment platform with automated system checks, evidence aggregation, and structured CLI/JSON reporting.</p><ul><li>Developing reconnaissance, vulnerability scanning, and local privilege escalation checks.</li><li>Building log aggregation and automated evidence reporting workflows.</li></ul><div class="card-stack"><span>Linux</span><span>Automation</span><span>Security Assessment</span><span>Evidence Reporting</span></div></div></details></div></div>
+<div class="project-card tilt-card reveal-decrypt" data-index="0">
+<div class="card-inner"><span class="project-number">02</span>
+<div class="card-glow"></div>
+<div class="card-header">
+<span class="card-tag">WEB3</span>
+<a class="card-github-link" href="https://github.com/Het28091/Blockrent_2026" rel="noopener" target="_blank" title="View on GitHub">GitHub ↗</a>
+</div>
+<h3 class="card-title">Blockrent</h3>
+<p class="card-desc">Decentralized Web3 rental &amp; auction platform on Ethereum — smart
                             contract escrow, SIWE auth, IPFS metadata, and on-chain dispute resolution.</p>
-                        <div class="card-stack">
-                            <span>Solidity</span><span>React</span><span>Node.js</span><span>Hardhat</span><span>ethers.js</span><span>IPFS</span>
-                        </div>
-                        <button class="card-btn" onclick="openModal(0)">Inspect Mission &rarr;</button>
-                    </div>
-                </div>
-                <div class="project-card tilt-card reveal-decrypt" data-index="1">
-                    <div class="card-inner">
-                        <div class="card-glow"></div>
-                        <div class="card-header">
-                            <span class="card-tag">CRYPTO</span>
-                            <a href="https://github.com/Het28091/Cipher-Nest" target="_blank" rel="noopener"
-                                class="card-github-link" title="View on GitHub">GitHub &nearr;</a>
-                        </div>
-                        <h3 class="card-title">CipherNest</h3>
-                        <p class="card-desc">A zero-knowledge vault engineered to withstand brute-force attacks,
+<div class="card-stack">
+<span>Solidity</span><span>React</span><span>Node.js</span><span>Hardhat</span><span>ethers.js</span><span>IPFS</span>
+</div>
+<details class="project-details"><summary>Explore project <span>↗</span></summary><div><p>Built a decentralized Web3 platform for renting, buying, and auctioning physical or digital assets without middlemen. Uses Ethereum smart contracts for secure transactions, automated escrows, and on-chain dispute resolution — combining blockchain guarantees with an off-chain indexer for speed.</p><ul><li>Engineered BlockrentEscrow.sol — a trustless vault that holds ETH conditionally, releasing funds only on confirmed receipt or admin arbitration.</li><li>Built BlockrentAuction.sol with timed bidding, automatic refunds to outbid users via pendingReturns, and state locks on expiry.</li><li>Implemented Sign-In With Ethereum (SIWE) — users authenticate by cryptographically signing a nonce with MetaMask; no passwords.</li><li>Dual-storage architecture: IPFS (Pinata) for immutable metadata on-chain, MySQL (Sequelize) for fast off-chain rich queries and PII compliance.</li><li>On-chain dispute resolution: Admin calls resolveDispute(escrowId, buyerPercent) to split frozen funds, e.g. 100 = full buyer refund.</li><li>Real-time notification system via Socket.io triggers alerts when escrow/auction state changes on-chain.</li></ul><div class="card-stack"><span>Smart Contracts</span><span>Escrow Pattern</span><span>SIWE Auth</span><span>IPFS / Pinata</span><span>Hybrid Web3 Architecture</span><span>On-Chain Dispute Resolution</span><span>Event-Driven Sync</span><span>Decentralized Auctions</span></div></div></details>
+</div>
+</div>
+<div class="project-card tilt-card reveal-decrypt" data-index="1">
+<div class="card-inner"><span class="project-number">03</span>
+<div class="card-glow"></div>
+<div class="card-header">
+<span class="card-tag">CRYPTO</span>
+<a class="card-github-link" href="https://github.com/Het28091/Cipher-Nest" rel="noopener" target="_blank" title="View on GitHub">GitHub ↗</a>
+</div>
+<h3 class="card-title">CipherNest</h3>
+<p class="card-desc">A zero-knowledge vault engineered to withstand brute-force attacks,
                             achieving sub-100ms decryption.</p>
-                        <div class="card-stack">
-                            <span>Python</span><span>AES-256</span><span>PBKDF2</span><span>SQLite</span>
-                        </div>
-                        <button class="card-btn" onclick="openModal(1)">Inspect Mission &rarr;</button>
-                    </div>
-                </div>
-                <div class="project-card tilt-card reveal-decrypt" data-index="2">
-                    <div class="card-inner">
-                        <div class="card-glow"></div>
-                        <div class="card-header">
-                            <span class="card-tag">FRONTEND</span>
-                            <a href="https://sundown-studio-tau.vercel.app/" target="_blank" rel="noopener"
-                                class="card-github-link">Live &nearr;</a>
-                            <a href="https://github.com/Het28091/Sundown-Studio" target="_blank" rel="noopener"
-                                class="card-github-link">GitHub &nearr;</a>
-                        </div>
-                        <h3 class="card-title">Sundown Studio</h3>
-                        <p class="card-desc">Premium creative agency landing page with scroll-driven animations, custom
-                            cursor, and fluid parallax &mdash; pure frontend craftsmanship.</p>
-                        <div class="card-stack">
-                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GSAP</span><span>Locomotive
+<div class="card-stack">
+<span>Python</span><span>AES-256</span><span>PBKDF2</span><span>SQLite</span>
+</div>
+<details class="project-details"><summary>Explore project <span>↗</span></summary><div><p>Engineered a zero-knowledge password vault that protects credentials using military-grade cryptography, ensuring neither brute-force attacks nor database breaches can expose plaintext passwords.</p><ul><li>Implemented AES-256-GCM encryption with a unique salt per entry — each entry must be cracked independently.</li><li>Used PBKDF2 with 600,000 iterations + SHA-256 to make dictionary attacks computationally infeasible.</li><li>Optimized database query pipeline to achieve decryption latency under 100ms for seamless UX.</li><li>Zero plaintext storage — a full database dump reveals nothing without the master key.</li></ul><div class="card-stack"><span>AES-256-GCM</span><span>PBKDF2</span><span>Salting</span><span>Zero-Knowledge</span><span>Key Stretching</span><span>SQL Injection Prevention</span></div></div></details>
+</div>
+</div>
+<div class="project-card tilt-card reveal-decrypt" data-index="2">
+<div class="card-inner"><span class="project-number">04</span>
+<div class="card-glow"></div>
+<div class="card-header">
+<span class="card-tag">FRONTEND</span>
+<a class="card-github-link" href="https://sundown-studio-tau.vercel.app/" rel="noopener" target="_blank">Live ↗</a>
+<a class="card-github-link" href="https://github.com/Het28091/Sundown-Studio" rel="noopener" target="_blank">GitHub ↗</a>
+</div>
+<h3 class="card-title">Sundown Studio</h3>
+<p class="card-desc">Premium creative agency landing page with scroll-driven animations, custom
+                            cursor, and fluid parallax — pure frontend craftsmanship.</p>
+<div class="card-stack">
+<span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GSAP</span><span>Locomotive
                                 Scroll</span>
-                        </div>
-                        <button class="card-btn" onclick="openModal(2)">Inspect Mission &rarr;</button>
-                    </div>
-                </div>
-                <div class="project-card tilt-card reveal-decrypt" data-index="3">
-                    <div class="card-inner">
-                        <div class="card-glow"></div>
-                        <div class="card-header"><span class="card-tag">AI / CV</span></div>
-                        <h3 class="card-title">FaceCopy</h3>
-                        <p class="card-desc">Biometric system with 98% accuracy in real-time identification, reducing
+</div>
+<details class="project-details"><summary>Explore project <span>↗</span></summary><div><p>Crafted a visually stunning static frontend for Sundown Studio — a creative agency landing page featuring fluid scroll-driven animations, a custom cursor, smooth page transitions, and a premium glassmorphism aesthetic that showcases advanced frontend engineering.</p><ul><li>Built zero-dependency scroll-driven reveal animations using Locomotive Scroll for buttery-smooth parallax effects.</li><li>Implemented a custom SVG cursor with magnetic hover states on interactive elements for a premium feel.</li><li>Achieved pixel-perfect responsive layouts across all breakpoints with pure CSS Grid and Flexbox.</li><li>Performance-optimized asset loading with lazy-loaded sections and minimal layout shift (CLS ≈ 0).</li></ul><div class="card-stack"><span>Scroll Animation</span><span>Custom Cursor</span><span>Parallax UX</span><span>CSS Grid / Flexbox</span><span>Performance Optimization</span><span>Creative UI/UX</span></div></div></details>
+</div>
+</div>
+<div class="project-card tilt-card reveal-decrypt" data-index="3">
+<div class="card-inner"><span class="project-number">05</span>
+<div class="card-glow"></div>
+<div class="card-header"><span class="card-tag">AI / CV</span></div>
+<h3 class="card-title">FaceCopy</h3>
+<p class="card-desc">Biometric system with 98% accuracy in real-time identification, reducing
                             manual effort by 80%.</p>
-                        <div class="card-stack"><span>Python</span><span>OpenCV</span><span>face_recognition</span>
-                        </div>
-                        <button class="card-btn" onclick="openModal(3)">Inspect Mission &rarr;</button>
-                    </div>
-                </div>
-                <div class="project-card tilt-card reveal-decrypt" data-index="4">
-                    <div class="card-inner">
-                        <div class="card-glow"></div>
-                        <div class="card-header"><span class="card-tag">CLOUD SEC</span></div>
-                        <h3 class="card-title">Secure File Sharing System</h3>
-                        <p class="card-desc">Cloud-native file repository with zero public exposure via S3 encryption
+<div class="card-stack"><span>Python</span><span>OpenCV</span><span>face_recognition</span>
+</div>
+<details class="project-details"><summary>Explore project <span>↗</span></summary><div><p>Developed a real-time biometric authentication system for automated attendance, applying computer vision to achieve near-perfect identification accuracy.</p><ul><li>Optimized HOG-based face detection pipeline in OpenCV, achieving 98% identification accuracy.</li><li>Implemented real-time multi-face tracking in video streams — no single-face limitation.</li><li>Attendance processing time reduced by 80% compared to manual roll-call methods.</li><li>Privacy-aware design: face embeddings stored as 128-point vectors, not raw images.</li></ul><div class="card-stack"><span>HOG Face Detection</span><span>Face Embeddings</span><span>Biometric Auth</span><span>Privacy-by-Design</span><span>Real-Time CV</span></div></div></details>
+</div>
+</div>
+<div class="project-card tilt-card reveal-decrypt" data-index="4">
+<div class="card-inner"><span class="project-number">06</span>
+<div class="card-glow"></div>
+<div class="card-header"><span class="card-tag">CLOUD SEC</span></div>
+<h3 class="card-title">Secure File Sharing System</h3>
+<p class="card-desc">Cloud-native file repository with zero public exposure via S3 encryption
                             and automated Lambda auditing.</p>
-                        <div class="card-stack"><span>AWS
+<div class="card-stack"><span>AWS
                                 S3</span><span>DynamoDB</span><span>Lambda</span><span>IAM</span></div>
-                        <button class="card-btn" onclick="openModal(4)">Inspect Mission &rarr;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<details class="project-details"><summary>Explore project <span>↗</span></summary><div><p>Built a serverless file repository on AWS with enterprise-grade access controls, eliminating the risk of public data exposure while automating continuous compliance checks.</p><ul><li>Enforced S3 Server-Side Encryption (SSE-S3) on all objects — at-rest data is always protected.</li><li>Pre-signed URLs with TTL &lt; 15 minutes ensure time-limited, identity-bound access — no shared links.</li><li>Lambda audit functions run on every S3 event, automatically revoking any detected public ACL changes.</li><li>Achieved zero public exposure by combining bucket policies with IAM Least Privilege everywhere.</li></ul><div class="card-stack"><span>SSE-S3</span><span>Pre-signed URLs</span><span>Least Privilege</span><span>IAM Policies</span><span>Event-Driven Security</span><span>Serverless</span></div></div></details>
+</div>
+</div>
+</div>
+</div>
+</section><section class="section section-dark" id="skills">
+<div class="container">
+<div class="section-label reveal-decrypt">03 / TOOLKIT</div>
+<h2 class="section-title reveal-decrypt">From the terminal<br/>to the cloud.</h2>
+<div class="skills-layout">
 
-    <!-- EXPERIENCE -->
-    <section class="section section-dark" id="experience">
-        <div class="container">
-            <div class="section-label reveal-decrypt">// FIELD OPS</div>
-            <h2 class="section-title reveal-decrypt">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item reveal-decrypt">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content tilt-card">
-                        <div class="card-inner">
-                            <div class="tl-header">
-                                <div>
-                                    <h3>B.Tech <span class="accent">Computer Engineering</span></h3>
-                                    <p class="tl-company">CHARUSAT University &mdash; Anand, India</p>
-                                </div>
-                                <span class="tl-date">2023 &ndash; 2027</span>
-                            </div>
-                            <ul class="tl-list">
-                                <li>CGPA: <span class="accent">8.71 / 10.0</span></li>
-                                <li>Core subjects: Cryptography, Network Security, OS, DBMS, Data Structures.</li>
-                                <li>Active in national hackathons and CTF competitions.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item reveal-decrypt">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content tilt-card">
-                        <div class="card-inner">
-                            <div class="tl-header">
-                                <div>
-                                    <h3>Cloud Developer Intern <span class="accent">(AWS)</span></h3>
-                                    <p class="tl-company">Agevole Innovation Pvt. Ltd. &mdash; Surat, India</p>
-                                </div>
-                                <span class="tl-date">Summer 2025</span>
-                            </div>
-                            <ul class="tl-list">
-                                <li>Architected <strong>Network Segmentation</strong> via VPCs &amp; private subnets
-                                    &mdash; reduced attack surface by <span class="accent">60%</span>.</li>
-                                <li>Hardened EC2 with <strong>Security Groups</strong> and enforced <strong>Least
+<div class="skill-bars">
+<div class="skill-category reveal-decrypt">
+<h3 class="cat-title">Cybersecurity</h3>
+<div class="skill-bar-row"><span>Cryptography (AES/RSA)</span>
+
+</div>
+<div class="skill-bar-row"><span>Network Security</span>
+
+</div>
+<div class="skill-bar-row"><span>Penetration Testing</span>
+
+</div>
+<div class="skill-bar-row"><span>OWASP Top 10</span>
+
+</div>
+</div>
+<div class="skill-category reveal-decrypt">
+<h3 class="cat-title">Cloud &amp; Systems</h3>
+<div class="skill-bar-row"><span>Linux / RHEL Admin</span>
+
+</div>
+<div class="skill-bar-row"><span>AWS Security (IAM/VPC)</span>
+
+</div>
+<div class="skill-bar-row"><span>Shell Scripting (Bash)</span>
+
+</div>
+<div class="skill-bar-row"><span>Docker / Virtualization</span>
+
+</div>
+</div>
+<div class="skill-category reveal-decrypt">
+<h3 class="cat-title">Languages &amp; Tools</h3>
+<div class="skill-bar-row"><span>Python</span>
+
+</div>
+<div class="skill-bar-row"><span>C / C++</span>
+
+</div>
+<div class="skill-bar-row"><span>Nmap / Wireshark</span>
+
+</div>
+<div class="skill-bar-row"><span>Burp Suite / Metasploit</span>
+
+</div>
+</div>
+<div class="skill-category"><h3 class="cat-title">Software engineering</h3><div class="skill-bar-row"><span>JavaScript / SQL / Solidity</span></div><div class="skill-bar-row"><span>React / Node.js / REST APIs</span></div><div class="skill-bar-row"><span>Data Structures &amp; Algorithms</span></div><div class="skill-bar-row"><span>OOP / System Design / CI/CD</span></div></div><div class="skill-category"><h3 class="cat-title">Security practice</h3><div class="skill-bar-row"><span>OSINT / Threat Modeling</span></div><div class="skill-bar-row"><span>Vulnerability Assessment</span></div><div class="skill-bar-row"><span>Kali Linux / System Debugging</span></div><div class="skill-bar-row"><span>Secure Coding / Log Analysis</span></div></div></div>
+</div>
+<div class="tool-tags reveal-decrypt">
+<span class="tag">Nmap</span><span class="tag">Wireshark</span><span class="tag">Burp Suite</span>
+<span class="tag">Metasploit</span><span class="tag">AES-256</span><span class="tag">PBKDF2</span>
+<span class="tag">AWS CloudWatch</span><span class="tag">IAM</span><span class="tag">VPC</span>
+<span class="tag">Docker</span><span class="tag">Git</span><span class="tag">OpenCV</span>
+<span class="tag">Scapy</span><span class="tag">CloudTrail</span><span class="tag">S3</span>
+</div>
+</div>
+</section><section class="section section-dark" id="experience">
+<div class="container">
+<div class="section-label reveal-decrypt">04 / THE JOURNEY</div>
+<h2 class="section-title reveal-decrypt">Learning. Building.<br/>Getting better.</h2>
+<div class="timeline"><div class="timeline-item"><div class="timeline-content"><div class="card-inner"><div class="tl-header"><div><h3>Cybersecurity Intern</h3><p class="tl-company">eInfochips — An Arrow Company · Ahmedabad, India</p></div><span class="tl-date">Aug 2026 — Present</span></div><ul class="tl-list"><li>Develop Python automation and assessment scripts to analyze system behavior and streamline security testing in Linux environments.</li><li>Analyze network telemetry and system logs to investigate vulnerabilities and system issues.</li><li>Collaborate with engineering teams on testing, technical reviews, documentation, and remediation strategies.</li></ul></div></div></div>
+<div class="timeline-item reveal-decrypt">
+<div class="timeline-dot"></div>
+<div class="timeline-content tilt-card">
+<div class="card-inner">
+<div class="tl-header">
+<div>
+<h3>B.Tech <span class="accent">Computer Engineering</span></h3>
+<p class="tl-company">CHARUSAT University — Anand, India</p>
+</div>
+<span class="tl-date">2023 – 2027</span>
+</div>
+<ul class="tl-list">
+<li>CGPA: <span class="accent">8.71 / 10.0</span></li>
+<li>Core subjects: Cryptography, Network Security, OS, DBMS, Data Structures.</li>
+<li>Active in national hackathons and CTF competitions.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="timeline-item reveal-decrypt">
+<div class="timeline-dot"></div>
+<div class="timeline-content tilt-card">
+<div class="card-inner">
+<div class="tl-header">
+<div>
+<h3>Cloud Developer Intern <span class="accent">(AWS)</span></h3>
+<p class="tl-company">Agevole Innovation Pvt. Ltd. — Surat, India</p>
+</div>
+<span class="tl-date">May — Jul 2025</span>
+</div>
+<ul class="tl-list">
+<li>Architected <strong>Network Segmentation</strong> via VPCs &amp; private subnets
+                                    — reduced attack surface by <span class="accent">60%</span>.</li>
+<li>Hardened EC2 with <strong>Security Groups</strong> and enforced <strong>Least
                                         Privilege IAM</strong> across all roles.</li>
-                                <li>Deployed <strong>Site-to-Site VPN</strong> and set up <strong>CloudWatch</strong>
+<li>Deployed <strong>Site-to-Site VPN</strong> and set up <strong>CloudWatch</strong>
                                     anomaly detection pipelines.</li>
-                                <li>Achieved <span class="accent">99.9% uptime</span> with Application Load Balancers
+<li>Achieved <span class="accent">99.9% uptime</span> with Application Load Balancers
                                     &amp; Auto Scaling groups.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item reveal-decrypt">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content tilt-card">
-                        <div class="card-inner">
-                            <div class="tl-header">
-                                <div>
-                                    <h3>Higher Secondary Certificate <span class="accent">(HSC)</span></h3>
-                                    <p class="tl-company">Parth Institute &mdash; Vadodara, India</p>
-                                </div>
-                                <span class="tl-date">Completed 2023</span>
-                            </div>
-                            <ul class="tl-list">
-                                <li>Percentile Rank: <span class="accent">86.36</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+</ul>
+</div>
+</div>
+</div>
+<div class="timeline-item reveal-decrypt">
+<div class="timeline-dot"></div>
+<div class="timeline-content tilt-card">
+<div class="card-inner">
+<div class="tl-header">
+<div>
+<h3>Higher Secondary Certificate <span class="accent">(HSC)</span></h3>
+<p class="tl-company">Parth Institute — Vadodara, India</p>
+</div>
+<span class="tl-date">Completed 2023</span>
+</div>
+<ul class="tl-list">
+<li>Percentile Rank: <span class="accent">86.36</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="section" id="certs">
+<div class="container">
+<div class="section-label reveal-decrypt">05 / PROOF OF PRACTICE</div>
+<h2 class="section-title reveal-decrypt">Earned, not claimed.</h2>
+<p class="certs-hint reveal-decrypt">Certifications, competitions, and a commitment to keep learning. Select a credential to view it.</p>
+<div class="certs-grid">
+<!-- Flip Card: RHCSA -->
+<a class="cert-card" href="RHCSA.pdf" rel="noopener" target="_blank"><div class="cert-flip-front">
+<h4>RHCSA</h4>
+<p>Red Hat Certified System Administrator</p>
+<span class="cert-issuer">Red Hat</span>
 
-    <!-- CERTS -->
-    <section class="section" id="certs">
-        <div class="container">
-            <div class="section-label reveal-decrypt">// CLEARANCE LEVEL</div>
-            <h2 class="section-title reveal-decrypt">Certifications &amp; Honors</h2>
-            <p class="certs-hint reveal-decrypt">Hover over a card to reveal the certificate.</p>
-            <div class="certs-grid">
+</div><span aria-hidden="true" class="cert-arrow">↗</span></a>
+<!-- Flip Card: Google -->
+<a class="cert-card" href="Google Cybersecurity.pdf" rel="noopener" target="_blank"><div class="cert-flip-front">
+<h4>Google Cybersecurity</h4>
+<p>Professional Certificate</p>
+<span class="cert-issuer">Google / Coursera</span>
 
-                <!-- Flip Card: RHCSA -->
-                <div class="cert-flip reveal-decrypt">
-                    <div class="cert-flip-inner">
-                        <div class="cert-flip-front">
-                            <h4>RHCSA</h4>
-                            <p>Red Hat Certified System Administrator</p>
-                            <span class="cert-issuer">Red Hat</span>
-                            <span class="flip-hint">Hover to reveal &#8635;</span>
-                        </div>
-                        <div class="cert-flip-back cert-back-pdf">
-                            <canvas class="pdf-canvas" data-pdf="RHCSA.pdf"></canvas>
-                            <a href="RHCSA.pdf" target="_blank" class="pdf-open-btn">Open PDF &#8599;</a>
-                            <span class="cert-issuer">Red Hat</span>
-                        </div>
-                    </div>
-                </div>
+</div><span aria-hidden="true" class="cert-arrow">↗</span></a>
+<!-- Flip Card: EC-Council Pentesting -->
+<a class="cert-card" href="EC-council pentesting.png" rel="noopener" target="_blank"><div class="cert-flip-front">
+<h4>Hacking &amp; Pentesting</h4>
+<p>Deep Dive — Offensive Security</p>
+<span class="cert-issuer">EC-Council</span>
 
-                <!-- Flip Card: Google -->
-                <div class="cert-flip reveal-decrypt">
-                    <div class="cert-flip-inner">
-                        <div class="cert-flip-front">
-                            <h4>Google Cybersecurity</h4>
-                            <p>Professional Certificate</p>
-                            <span class="cert-issuer">Google / Coursera</span>
-                            <span class="flip-hint">Hover to reveal &#8635;</span>
-                        </div>
-                        <div class="cert-flip-back cert-back-pdf">
-                            <canvas class="pdf-canvas" data-pdf="Google Cybersecurity.pdf"></canvas>
-                            <a href="Google Cybersecurity.pdf" target="_blank" class="pdf-open-btn">Open PDF &#8599;</a>
-                            <span class="cert-issuer">Google / Coursera</span>
-                        </div>
-                    </div>
-                </div>
+</div><span aria-hidden="true" class="cert-arrow">↗</span></a>
+<!-- Flip Card: NPTEL Cryptography -->
+<a class="cert-card" href="NPTEL Cryptography and Network Security.pdf" rel="noopener" target="_blank"><div class="cert-flip-front">
+<h4>NPTEL Cryptography</h4>
+<p>Network Security — Gold Medal, Top 5%</p>
+<span class="cert-issuer">IIT Madras / NPTEL</span>
 
-                <!-- Flip Card: EC-Council Pentesting -->
-                <div class="cert-flip reveal-decrypt">
-                    <div class="cert-flip-inner">
-                        <div class="cert-flip-front">
-                            <h4>Hacking &amp; Pentesting</h4>
-                            <p>Deep Dive &mdash; Offensive Security</p>
-                            <span class="cert-issuer">EC-Council</span>
-                            <span class="flip-hint">Hover to reveal &#8635;</span>
-                        </div>
-                        <div class="cert-flip-back cert-back-pdf">
-                            <img src="EC-council pentesting.png" alt="EC-Council Pentesting Certificate" />
-                            <span class="cert-issuer">EC-Council</span>
-                        </div>
-                    </div>
-                </div>
+</div><span aria-hidden="true" class="cert-arrow">↗</span></a>
+<!-- Flip Card: NPTEL DBMS -->
+<a class="cert-card" href="NPTEL Data Base Management System.pdf" rel="noopener" target="_blank"><div class="cert-flip-front">
+<h4>NPTEL DBMS</h4>
+<p>Database Management Systems — Elite, Top 5%</p>
+<span class="cert-issuer">IIT Kharagpur / NPTEL</span>
 
+</div><span aria-hidden="true" class="cert-arrow">↗</span></a>
+<!-- Flip Card: NPTEL Python -->
+<a class="cert-card" href="NPTEL Programming, Data Structures and Algorithms using Python.pdf" rel="noopener" target="_blank"><div class="cert-flip-front">
+<h4>NPTEL Python</h4>
+<p>Programming, Data Structures &amp; Algorithms</p>
+<span class="cert-issuer">NPTEL</span>
 
+</div><span aria-hidden="true" class="cert-arrow">↗</span></a>
+<!-- Flip Card: BitGuard / Hackathon -->
+<a class="cert-card" href="BitGuard 2.0 - Certificate of Appreciation.pdf" rel="noopener" target="_blank"><div class="cert-flip-front">
+<h4>BitGuard 2.0</h4>
+<p>Certificate of Appreciation</p>
+<span class="cert-issuer">Hackathon</span>
 
-                <!-- Flip Card: NPTEL Cryptography -->
-                <div class="cert-flip reveal-decrypt">
-                    <div class="cert-flip-inner">
-                        <div class="cert-flip-front">
-                            <h4>NPTEL Cryptography</h4>
-                            <p>Network Security &mdash; Gold Medal, Top 5%</p>
-                            <span class="cert-issuer">IIT Madras / NPTEL</span>
-                            <span class="flip-hint">Hover to reveal &#8635;</span>
-                        </div>
-                        <div class="cert-flip-back cert-back-pdf">
-                            <canvas class="pdf-canvas" data-pdf="NPTEL Cryptography and Network Security.pdf"></canvas>
-                            <a href="NPTEL Cryptography and Network Security.pdf" target="_blank"
-                                class="pdf-open-btn">Open PDF &#8599;</a>
-                            <span class="cert-issuer">IIT Madras</span>
-                        </div>
-                    </div>
-                </div>
+</div><span aria-hidden="true" class="cert-arrow">↗</span></a>
+<!-- Flip Card: TryHackMe - Pre Security -->
+<a class="cert-card" href="THM-U8TMIHWGRZ.pdf" rel="noopener" target="_blank"><div class="cert-flip-front">
+<h4>TryHackMe</h4>
+<p>Pre Security Path</p>
+<span class="cert-issuer">TryHackMe — Top 2%</span>
 
-                <!-- Flip Card: NPTEL DBMS -->
-                <div class="cert-flip reveal-decrypt">
-                    <div class="cert-flip-inner">
-                        <div class="cert-flip-front">
-                            <h4>NPTEL DBMS</h4>
-                            <p>Database Management Systems &mdash; Elite, Top 5%</p>
-                            <span class="cert-issuer">IIT Kharagpur / NPTEL</span>
-                            <span class="flip-hint">Hover to reveal &#8635;</span>
-                        </div>
-                        <div class="cert-flip-back cert-back-pdf">
-                            <canvas class="pdf-canvas" data-pdf="NPTEL Data Base Management System.pdf"></canvas>
-                            <a href="NPTEL Data Base Management System.pdf" target="_blank" class="pdf-open-btn">Open
-                                PDF &#8599;</a>
-                            <span class="cert-issuer">IIT Kharagpur</span>
-                        </div>
-                    </div>
-                </div>
+</div><span aria-hidden="true" class="cert-arrow">↗</span></a>
+<!-- Flip Card: Built With India -->
+<a class="cert-card" href="Het Prajapati Build with INDIA.png" rel="noopener" target="_blank"><div class="cert-flip-front">
+<h4>Built With India</h4>
+<p>Hackathon — Global Top 5,000</p>
+<span class="cert-issuer">Hackathon 2024</span>
 
-                <!-- Flip Card: NPTEL Python -->
-                <div class="cert-flip reveal-decrypt">
-                    <div class="cert-flip-inner">
-                        <div class="cert-flip-front">
-                            <h4>NPTEL Python</h4>
-                            <p>Programming, Data Structures &amp; Algorithms</p>
-                            <span class="cert-issuer">NPTEL</span>
-                            <span class="flip-hint">Hover to reveal &#8635;</span>
-                        </div>
-                        <div class="cert-flip-back cert-back-pdf">
-                            <canvas class="pdf-canvas"
-                                data-pdf="NPTEL Programming, Data Structures and Algorithms using Python.pdf"></canvas>
-                            <a href="NPTEL Programming, Data Structures and Algorithms using Python.pdf" target="_blank"
-                                class="pdf-open-btn">Open PDF &#8599;</a>
-                            <span class="cert-issuer">NPTEL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Flip Card: BitGuard / Hackathon -->
-                <div class="cert-flip reveal-decrypt">
-                    <div class="cert-flip-inner">
-                        <div class="cert-flip-front">
-                            <h4>BitGuard 2.0</h4>
-                            <p>Certificate of Appreciation</p>
-                            <span class="cert-issuer">Hackathon</span>
-                            <span class="flip-hint">Hover to reveal &#8635;</span>
-                        </div>
-                        <div class="cert-flip-back cert-back-pdf">
-                            <canvas class="pdf-canvas"
-                                data-pdf="BitGuard 2.0 - Certificate of Appreciation.pdf"></canvas>
-                            <a href="BitGuard 2.0 - Certificate of Appreciation.pdf" target="_blank"
-                                class="pdf-open-btn">Open PDF &#8599;</a>
-                            <span class="cert-issuer">Hackathon</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Flip Card: TryHackMe - Pre Security -->
-                <div class="cert-flip reveal-decrypt">
-                    <div class="cert-flip-inner">
-                        <div class="cert-flip-front">
-                            <h4>TryHackMe</h4>
-                            <p>Pre Security Path</p>
-                            <span class="cert-issuer">TryHackMe &mdash; Top 2%</span>
-                            <span class="flip-hint">Hover to reveal &#8635;</span>
-                        </div>
-                        <div class="cert-flip-back cert-back-pdf">
-                            <canvas class="pdf-canvas" data-pdf="THM-U8TMIHWGRZ.pdf"></canvas>
-                            <a href="THM-U8TMIHWGRZ.pdf" target="_blank" class="pdf-open-btn">Open PDF &#8599;</a>
-                            <span class="cert-issuer">TryHackMe</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Flip Card: Built With India -->
-                <div class="cert-flip reveal-decrypt">
-                    <div class="cert-flip-inner">
-                        <div class="cert-flip-front">
-                            <h4>Built With India</h4>
-                            <p>Hackathon &mdash; Global Top 5,000</p>
-                            <span class="cert-issuer">Hackathon 2024</span>
-                            <span class="flip-hint">Hover to reveal &#8635;</span>
-                        </div>
-                        <div class="cert-flip-back cert-back-pdf">
-                            <img src="Het Prajapati Build with INDIA.png" alt="Built With India Certificate" />
-                            <span class="cert-issuer">Hackathon</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Honors -->
-            <div class="honors-block reveal-decrypt">
-                <h3 class="honors-title">// Honors &amp; Awards</h3>
-                <div class="honors-list">
-                    <div class="honor-item"><span class="honor-badge red">GLOBAL 51</span>
-                        <div><strong>Hackerverse CTF &mdash; EC-Council</strong><span>Global Rank 51 in a competitive
+</div><span aria-hidden="true" class="cert-arrow">↗</span></a>
+</div>
+<!-- Honors -->
+<div class="honors-block reveal-decrypt">
+<h3 class="honors-title">Beyond the coursework</h3>
+<div class="honors-list"><div class="honor-item"><span class="honor-badge">FINALIST</span><div><strong>Odoo × Gujarat Vidyapith Hackathon</strong><span>Ahmedabad · March 2026 — built software solutions in a time-constrained team environment.</span></div></div>
+<div class="honor-item"><span class="honor-badge red">GLOBAL 51</span>
+<div><strong>Hackerverse CTF — EC-Council</strong><span>Global Rank 51 in a competitive
                                 cybersecurity challenge</span></div>
-                    </div>
-                    <div class="honor-item"><span class="honor-badge red">TOP 2%</span>
-                        <div><strong>TryHackMe &mdash; Global Top 2%</strong><span>Ranked in the top 2% of all TryHackMe
+</div>
+<div class="honor-item"><span class="honor-badge red">TOP 2%</span>
+<div><strong>TryHackMe — Global Top 2%</strong><span>Ranked in the top 2% of all TryHackMe
                                 platform users worldwide</span></div>
-                    </div>
-                    <div class="honor-item"><span class="honor-badge gold">GOLD</span>
-                        <div><strong>NPTEL Gold Medalist &mdash; Top 5%</strong><span>Cryptography &amp; Network
+</div>
+<div class="honor-item"><span class="honor-badge gold">GOLD</span>
+<div><strong>NPTEL Gold Medalist — Top 5%</strong><span>Cryptography &amp; Network
                                 Security (IIT Madras)</span></div>
-                    </div>
-                    <div class="honor-item"><span class="honor-badge silver">TOP 5%</span>
-                        <div><strong>NPTEL Elite &mdash; Database Management Systems</strong><span>IIT Kharagpur</span>
-                        </div>
-                    </div>
-                    <div class="honor-item"><span class="honor-badge silver">TOP 5%</span>
-                        <div><strong>NPTEL Elite &mdash; Programming &amp; Data Structures
+</div>
+<div class="honor-item"><span class="honor-badge silver">TOP 5%</span>
+<div><strong>NPTEL Elite — Database Management Systems</strong><span>IIT Kharagpur</span>
+</div>
+</div>
+<div class="honor-item"><span class="honor-badge silver">TOP 5%</span>
+<div><strong>NPTEL Elite — Programming &amp; Data Structures
                                 (Python)</strong><span>National Programme on Technology Enhanced Learning</span></div>
-                    </div>
-                    <div class="honor-item">
-                        <span class="honor-badge red">3-STAR</span>
-                        <div>
-                            <strong>
-                                <img src="https://www.google.com/s2/favicons?domain=codechef.com&sz=32" alt="CodeChef"
-                                    class="honor-logo" />
+</div>
+<div class="honor-item">
+<span class="honor-badge red">3-STAR</span>
+<div>
+<strong>
+
                                 CodeChef 3-Star Coder
                             </strong>
-                            <span>Consistently solved algorithmic problems at competitive rating</span>
-                        </div>
-                    </div>
-                    <div class="honor-item">
-                        <span class="honor-badge silver">680+ SOLVES</span>
-                        <div>
-                            <strong>
-                                <img src="https://www.google.com/s2/favicons?domain=leetcode.com&sz=32" alt="LeetCode"
-                                    class="honor-logo" />
-                                LeetCode &mdash; 680+ Problems Solved
+<span>Consistently solved algorithmic problems at competitive rating</span>
+</div>
+</div>
+<div class="honor-item">
+<span class="honor-badge silver">680+ SOLVES</span>
+<div>
+<strong>
+
+                                LeetCode — 680+ Problems Solved
                             </strong>
-                            <span>Across data structures &amp; algorithms</span>
-                        </div>
-                    </div>
-                    <div class="honor-item"><span class="honor-badge red">TOP 5K</span>
-                        <div><strong>Built With India Hackathon &mdash; Global Rank Top 5,000</strong><span>Among
+<span>Across data structures &amp; algorithms</span>
+</div>
+</div>
+<div class="honor-item"><span class="honor-badge red">TOP 5K</span>
+<div><strong>Built With India Hackathon — Global Rank Top 5,000</strong><span>Among
                                 25,000+ competing teams</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+</div>
+</div>
+</div>
+</div>
+</section><section class="section section-dark" id="contact">
+<div class="container">
+<div class="section-label reveal-decrypt">06 / WHAT’S NEXT</div>
+<h2 class="section-title reveal-decrypt">Let’s build<br/><em>something that lasts.</em></h2>
+<div class="contact-layout">
+<div class="contact-terminal reveal-decrypt">
+<div class="terminal-window">
+<div class="terminal-bar">
+<span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+<span class="term-title">message.sh</span>
+</div>
+<div class="terminal-body">
+<form class="contact-form" id="contactForm">
+<div class="form-row"><label class="form-label" for="fName">&gt; <span class="accent">name</span>: </label><input autocomplete="name" class="form-input" id="fName" placeholder="your_name" required="" type="text"/></div>
+<div class="form-row"><label class="form-label" for="fEmail">&gt; <span class="accent">email</span>: </label><input autocomplete="email" class="form-input" id="fEmail" placeholder="your@email.com" required="" type="email"/></div>
+<div class="form-row"><label class="form-label" for="fSubject">&gt; <span class="accent">subject</span>: </label><input class="form-input" id="fSubject" placeholder="Re: Collaboration" required="" type="text"/></div>
+<div class="form-row form-row-full"><label class="form-label" for="fMsg">&gt; <span class="accent">message</span>:</label><textarea class="form-input form-textarea" id="fMsg" placeholder="Your message..." required="" rows="4"></textarea></div>
+<div class="form-row form-row-full"><button class="btn btn-primary form-submit" type="submit">Send Message</button></div>
+<div aria-live="polite" class="form-status" id="formStatus" role="status"></div>
+</form>
+</div>
+</div>
+</div>
+<div class="contact-info reveal-decrypt">
+<div class="contact-card">
+<h3>Reach Out</h3>
+<div class="contact-links">
+<a class="contact-link" href="mailto:het2809@gmail.com">
+<span class="link-icon">@</span>
+<div><span class="link-label">Email</span><span class="link-val">het2809@gmail.com</span></div>
+</a>
+<a class="contact-link" href="https://www.linkedin.com/in/het-prajapati-1a1407283/" rel="noopener" target="_blank"><span class="link-icon">in</span>
+<div><span class="link-label">LinkedIn</span><span class="link-val">het-prajapati</span>
+</div>
+</a>
+<a class="contact-link" href="https://github.com/Het28091" rel="noopener" target="_blank"><span class="link-icon">gh</span>
+<div><span class="link-label">GitHub</span><span class="link-val">Het28091</span></div>
+</a>
+<a class="contact-link" href="https://leetcode.com/u/Het_Prajapati/" rel="noopener" target="_blank"><span class="link-icon">lc</span>
+<div><span class="link-label">LeetCode</span><span class="link-val">Het_Prajapati</span>
+</div>
+</a>
+</div>
+<div class="location-badge">Vadodara, Gujarat, India</div>
+</div>
+</div>
+</div>
+</div>
+</section></main>
+<!-- HERO -->
 
-    <!-- CONTACT -->
-    <section class="section section-dark" id="contact">
-        <div class="container">
-            <div class="section-label reveal-decrypt">// SECURE COMMS</div>
-            <h2 class="section-title reveal-decrypt">Get In Touch</h2>
-            <div class="contact-layout">
-                <div class="contact-terminal reveal-decrypt">
-                    <div class="terminal-window">
-                        <div class="terminal-bar">
-                            <span class="term-dot red"></span><span class="term-dot yellow"></span><span
-                                class="term-dot green"></span>
-                            <span class="term-title">message.sh</span>
-                        </div>
-                        <div class="terminal-body">
-                            <form class="contact-form" id="contactForm">
-                                <div class="form-row"><label class="form-label">&gt; <span
-                                            class="accent">name</span>:&nbsp;</label><input id="fName" type="text"
-                                        class="form-input" placeholder="your_name" required /></div>
-                                <div class="form-row"><label class="form-label">&gt; <span
-                                            class="accent">email</span>:&nbsp;</label><input id="fEmail" type="email"
-                                        class="form-input" placeholder="your@email.com" required /></div>
-                                <div class="form-row"><label class="form-label">&gt; <span
-                                            class="accent">subject</span>:&nbsp;</label><input id="fSubject" type="text"
-                                        class="form-input" placeholder="Re: Collaboration" required /></div>
-                                <div class="form-row form-row-full"><label class="form-label">&gt; <span
-                                            class="accent">message</span>:</label><textarea id="fMsg"
-                                        class="form-input form-textarea" placeholder="Your message..." rows="4"
-                                        required></textarea></div>
-                                <div class="form-row form-row-full"><button type="submit"
-                                        class="btn btn-primary form-submit">Send Message</button></div>
-                                <div class="form-status" id="formStatus"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-info reveal-decrypt">
-                    <div class="contact-card">
-                        <h3>Reach Out</h3>
-                        <div class="contact-links">
-                            <a href="mailto:het2809@gmail.com" class="contact-link">
-                                <span class="link-icon">@</span>
-                                <div><span class="link-label">Email</span><span
-                                        class="link-val">het2809@gmail.com</span></div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/het-prajapati-1a1407283/" target="_blank"
-                                rel="noopener" class="contact-link"><span class="link-icon">in</span>
-                                <div><span class="link-label">LinkedIn</span><span class="link-val">het-prajapati</span>
-                                </div>
-                            </a>
-                            <a href="https://github.com/Het28091" target="_blank" rel="noopener"
-                                class="contact-link"><span class="link-icon">gh</span>
-                                <div><span class="link-label">GitHub</span><span class="link-val">Het28091</span></div>
-                            </a>
-                            <a href="https://leetcode.com/u/Het_Prajapati/" target="_blank" rel="noopener"
-                                class="contact-link"><span class="link-icon">lc</span>
-                                <div><span class="link-label">LeetCode</span><span class="link-val">Het_Prajapati</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="location-badge">Vadodara, Gujarat, India</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ABOUT -->
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <span class="accent">&gt;</span> &copy; 2026 Het Prajapati &mdash; All rights reserved.
-        </div>
-    </footer>
+<!-- SKILLS -->
 
-    <!-- PROJECT MODAL -->
-    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
-    <div class="modal" id="projectModal">
-        <button class="modal-close" onclick="closeModal()">&#10005;</button>
-        <div class="modal-header">
-            <div>
-                <h3 class="modal-title" id="mTitle"></h3>
-                <div class="modal-stack" id="mStack"></div>
-            </div>
-        </div>
-        <div class="modal-body">
-            <h4>// Objective</h4>
-            <p id="mObjective"></p>
-            <h4>// Key Achievements</h4>
-            <ul id="mAchievements"></ul>
-            <h4>// Security Concepts</h4>
-            <div class="modal-tags" id="mConcepts"></div>
-        </div>
-    </div>
+<!-- PROJECTS -->
 
-    <script src="main.js"></script>
+<!-- EXPERIENCE -->
+
+<!-- CERTS -->
+
+<!-- CONTACT -->
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-inner"><span>© 2026 Het Prajapati</span><span>Built with curiosity. Designed with intent.</span><a href="#hero">BACK TO TOP ↑</a></div>
+</footer>
+<!-- PROJECT MODAL -->
+
+
+<script defer="" src="main.js?v=2"></script>
 </body>
-
 </html>
